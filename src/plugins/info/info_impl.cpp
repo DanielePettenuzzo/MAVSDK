@@ -54,6 +54,11 @@ void InfoImpl::enable()
         &_flight_info_call_every_cookie);
 }
 
+void InfoImpl::send_autopilot_version()
+{
+    _parent->send_autopilot_version();
+}
+
 void InfoImpl::disable()
 {
     _parent->remove_call_every(_call_every_cookie);

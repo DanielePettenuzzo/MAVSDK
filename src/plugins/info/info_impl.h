@@ -19,6 +19,8 @@ public:
     void enable() override;
     void disable() override;
 
+    void send_autopilot_version();
+
     std::pair<Info::Result, Info::Identification> get_identification() const;
     std::pair<Info::Result, Info::Version> get_version() const;
     std::pair<Info::Result, Info::Product> get_product() const;

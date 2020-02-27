@@ -72,6 +72,8 @@ public:
                                                   string. */
     };
 
+    void send_autopilot_version();
+
     /**
      * @brief Type containing system product information.
      */

@@ -223,6 +223,9 @@ public:
 
     MAVLinkAddress target_address{};
 
+    mavlink_autopilot_version_t _autopilot_version {};
+    void send_autopilot_version();
+
 private:
     // Helper methods added to increase readablity
     static bool is_autopilot(uint8_t comp_id);

@@ -41,4 +41,8 @@ std::string Info::result_str(Result result)
     }
 }
 
+void Info::send_autopilot_version(){
+    _impl->send_autopilot_version();
+}
+
 } // namespace mavsdk
